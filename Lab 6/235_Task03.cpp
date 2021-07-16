@@ -83,7 +83,7 @@ bool Coordinate::operator <= (Coordinate c)
 {
     float a = getDistance();
     float b = c.getDistance();
-    return (a <= b) ? true : false;
+    return (a <= b) ;
 }
 
 bool Coordinate::operator == (Coordinate c)

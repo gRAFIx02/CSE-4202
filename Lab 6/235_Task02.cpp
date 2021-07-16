@@ -124,7 +124,7 @@ double Matrix3D::det()
     {
         getCoFactor(i, 0, temp);
         d += sign*(temp[0][0]*temp[1][1] - temp[0][1]*temp[1][0])*a[i][0];
-        sign=-sign;
+        sign= -sign;
     }
     return d;
 }
