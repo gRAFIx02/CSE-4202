@@ -1,0 +1,8 @@
+Instructions
+
+Avoid obstacles by moving left or right.
+Press 'a' to move left
+Press 'd' to move right
+Press 'esc' to exit
+
+Press any key to continue
