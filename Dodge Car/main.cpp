@@ -134,10 +134,10 @@ int collision(){
     }
     return 0;
 }
-void gameover(){
+void gameover(string s){
     system("cls");
     cout<<endl;
-    cout<<"\t\tYOUR_SCORE:"<<score<<endl;
+    cout<<"\t\t"<<s<<" YOUR_SCORE:"<<score<<endl;
     cout<<"\t\t__________________________"<<endl;
     cout<<"\t\t__________________________"<<endl;
     cout<<"\t\t_________Game Over________"<<endl;
@@ -218,13 +218,15 @@ void LOADING()
     system("cls");
 }
 
-void name()
+string  name()
 {
     system("cls");
     string s;
     gotoxy(50, 13);
-    cout<<"Enter a name: ";
+    cout<<"Enter your name: ";
     cin>>s;
+
+    return s;
 }
 
 int temp=0;
@@ -233,7 +235,7 @@ void play(){
 
 
     int i;
-    name();
+    string nam= name();
     char c = choose_car();
 
     for(i=0;i<1000000000;i++){}
@@ -291,7 +293,7 @@ void play(){
         drawEnemy(0);
         drawEnemy(1);
         if( collision() == 1  ){
-            gameover();
+            gameover(nam);
             return;
         }
 
